@@ -1,14 +1,3 @@
 #!/bin/bash
 printf "%.2f" $NUM | sort
 100-decimal_to_hexadecimal
-#!/bin/bash
-printf '%x\n' $DECIMAL
-101-rot13
-#!/bin/bash
-tr 'A-Za-z' 'N-ZA-Mn-za-m'
-102-odd
-#!/bin/bash
-perl -lne 'print if $. % 2 ==1'
-103-water_and_stir
-#!/bin/bash
-echo $(printf %o $(($((5#$(echo $WATER | tr 'water' '01234'))) + $((5#$(echo $STIR | tr 'stir.' '01234'))))) | tr '01234567' 'bestchol')
